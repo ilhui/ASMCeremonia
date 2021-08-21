@@ -1,3 +1,4 @@
+include ../config/config
 doctype html
 html(lang="es")
 	head
@@ -5,12 +6,12 @@ html(lang="es")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		link(rel="stylesheet", href="css/styles-min.css")
+		script(rel="javascript" src="js/scripts-min.js") 
 		title Document
 	body
 		header
-			include ../includes/header
+			block header
 		main 
-			include ../includes/media
-			include ../includes/carrers
+			block main
 		footer
-			include ../includes/footer
+			block footer
