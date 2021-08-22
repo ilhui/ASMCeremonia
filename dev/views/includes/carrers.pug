@@ -3,7 +3,7 @@ div
 		span Licenciatura
 		h1= value.name
 		each person,index in value.graduates
-			img(src="assets/images/" + value.folder + "/image-" + `${index+1}` + ".gif", alt="Foto " + person)
+			img(src="assets/images/" + value.folder + "/" + `${index+1}` + ".png", alt="Foto " + person)
 			h4= person
 		img(src="assets/images/directores/"+value.picdirector+".png", alt="")
 		p= value.quote

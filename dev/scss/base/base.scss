@@ -3,3 +3,45 @@ body {
 	font-family: $font-body;
 	color: $primary-color;
 }
+
+.container{
+	width: 100%;
+	margin: auto;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+	padding: 12px;
+	box-sizing: border-box;
+}
+
+.container header,
+.container section,
+.container main,
+.container footer {
+	display: block;
+}
+
+.header {
+	background-color: darkblue;
+}
+
+.media {
+	background-color: darkmagenta;
+}
+
+.main {
+	background-color: darkcyan;
+}
+
+.footer {
+	background-color: darkgreen;
+}
+
+video,
+img {
+	max-width: 100%;
+}
+
+video {
+	border-radius: 24px;
+}
