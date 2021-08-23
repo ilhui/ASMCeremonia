@@ -1,7 +1,11 @@
 :root {
-	--primary-color: #d4d4d4;
-	--background-color: #1c1730;
+	--primary-color: #ebebeb;
+	--acent-color: #ffd02b;
+	--second-color:#8192bf ;
+	--background-color: #080a21;
 }
 
 $primary-color: var(--primary-color);
+$acent-color: var(--acent-color);
+$second-color: var(--second-color);
 $background-color: var(--background-color);
