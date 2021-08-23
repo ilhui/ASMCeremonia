@@ -1,14 +1,4 @@
-div
-	each value in carrers
-		span Licenciatura
-		h1= value.name
-		each person,index in value.graduates
-			img.img--graduated(src="assets/images/" + value.folder + "/" + `${index+1}` + ".png", alt="Foto " + person)
-			h4= person
-		img.img--director(src="assets/images/directores/"+value.picdirector+".png", alt="")
-		p.quote= `"${value.quote}"`
-		h5= value.director
-		if value.female
-			p.director Directora de la Carrera
-		else
-			p.director Director de la Carrera
+div.flex
+	+carrer(television)
+	+carrer(diseno)
+	+carrer(consultoria)

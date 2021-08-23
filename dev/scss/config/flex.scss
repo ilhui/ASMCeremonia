@@ -1,0 +1,33 @@
+.flex {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	width: auto;
+	height: auto;
+	background-color: blue;
+	@include mobile {
+		flex-flow: column nowrap;
+	}
+}
+
+.flex-item {
+	flex-grow: 1;
+}
+
+.flex-content {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	width: auto;
+	height: auto;
+	@include tablet {
+		flex-flow: column nowrap;
+	}
+}
+
+.flex-content-item {
+	flex-grow: 1;
+}
+

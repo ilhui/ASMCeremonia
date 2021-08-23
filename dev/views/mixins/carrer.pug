@@ -1,0 +1,19 @@
+mixin carrer(carrers)
+	div.flex-item
+		each value in carrers
+			div
+				//- p Licenciatura
+				h3= value.name
+			div.flex-content
+				div.flex-content-item
+					each person,index in value.graduates
+						img.img--graduated(src="assets/images/" + value.folder + "/" + `${index+1}` + ".png", alt="Foto " + person)
+						h4= person
+				div.flex-item
+					img.img--director(src="assets/images/directores/"+value.picdirector+".png", alt="")
+					p.quote= `"${value.quote}"`
+					h5= value.director
+					if value.female
+						p.director Directora de la Carrera
+					else
+						p.director Director de la Carrera
