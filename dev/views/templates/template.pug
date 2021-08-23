@@ -6,14 +6,18 @@ html(lang="es")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		link(rel="stylesheet", href="css/styles-min.css")
-		script(rel="javascript" src="js/scripts-min.js") 
+		script(src="https://kit.fontawesome.com/1bd7ea1dfd.js" crossorigin="anonymous")
 		title Document
-	body.container
-		header.header
-			block header
-		section.media
-			block media
-		main.main
-			block main
-		footer.footer
-			block footer
+	body
+		.cover#cover
+			block cover
+		.container
+			header.header
+				block header
+			section.media
+				block media
+			main.main
+				block main
+			footer.footer
+				block footer
+	script(rel="javascript" src="js/scripts-min.js") 

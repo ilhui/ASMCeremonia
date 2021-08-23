@@ -1,22 +1,29 @@
 :root {
-	--font-size-desktop: 20px;
-	--font-size-tablet: 16px;
-	--font-size-movil: 14px;
+	--font-size-desktop: 1vw;
+	--font-size-tablet: 2vw;
+	--font-size-movil: 3vw;
 }
 
 $font-desktop: var(--font-size-desktop);
 $font-tablet: var(--font-size-tablet);
-$font-movil: var(--font-size-movil);
+$font-mobile: var(--font-size-movil);
 
 body {
 	color: $primary-color;
 	font-family: $font-general;
 	text-align: center;
-	text-rendering: optimizeLegibility;
+
 }
 
 .container {
 	font-size: $font-desktop;
+	text-rendering: optimizeLegibility;
+	@include tablet {
+		font-size: $font-tablet;
+	}
+	@include mobile {
+		font-size: $font-mobile;
+	}
 }
 
 h1 {

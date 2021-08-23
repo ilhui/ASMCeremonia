@@ -1,17 +1,22 @@
 img {
 	width: auto;
+	max-width: 100%;
+	display: block;
+	height: auto;
+	margin: auto;
+	box-sizing: border-box;
 }
 
-.logo {
+.logo img {
 	max-width: 60%;
 }
 
 .img-graduated {
-	max-width: 260px;
+	max-width: 79%;
 }
 
 .img-director {
-	max-width: 120px ;
+	max-width: 60%;
 	border-radius: 50%;
 	background-color: $acent-color;
 }

@@ -1,0 +1,86 @@
+.cover {
+	width: 100%;
+	min-height:100vh;
+	position: fixed;
+	background-image: url("../assets/images/gradient.jpg");
+	background-position: center; 
+	background-size: cover;
+	background-blend-mode: soft-light;
+	background-color: $background-color;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: .5s ease-out all;
+}
+
+.cover.hidden{
+	transform: translateY(100%);
+}
+.cover .logo {
+	width: 20%;
+	margin-bottom: 3rem;
+}
+.cover h1 {
+	font-size: 2em;
+	margin-bottom: .5em;
+}
+.cover h2 {
+	font-size: 5em;
+	margin-bottom: .5em;
+}
+
+.social {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	margin: 0 auto;
+	width: 20%;
+	height: auto;
+}
+.social a {
+	font-size: 2em;
+	padding: .2em;
+	color: $acent-color;
+	width: 1em;
+	height: 1em;
+	transition: 1s ease all;
+	:hover {
+		color: $second-color;
+	}
+}
+
+.counter {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3em;
+}
+
+.simply-section {
+	background-color: $background-color-alpha;
+	width: 180px;
+	height: 180px;
+	margin: 0 20px;
+	@include border-radius;
+	@include border-line;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.simply-amount {
+	display: block;
+	font-size: 4.5em;
+	font-weight: 700;
+}
+
+.simply-word {
+	font-size: 1.5em;
+	font-weight: 400;
+}
