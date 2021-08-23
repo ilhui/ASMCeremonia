@@ -1,4 +1,8 @@
 body {
+	background-image: url("../assets/images/gradient.jpg");
+	background-position: center; 
+	background-size: cover;
+	background-blend-mode: soft-light;
 	background-color: $background-color;
 }
 
@@ -15,20 +19,3 @@ body {
 .container footer {
 	display: block;
 }
-
-.header {
-	background-color: darkblue;
-}
-
-.media {
-	background-color: darkmagenta;
-}
-
-.main {
-	background-color: darkcyan;
-}
-
-.footer {
-	background-color: darkgreen;
-}
-

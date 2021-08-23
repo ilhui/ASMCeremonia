@@ -1,0 +1,19 @@
+.carrer {
+	padding: 1rem;
+	@include border-radius
+	@include border-line
+}
+.carrer:nth-last-child(n+2) {
+	margin-right: 12px;
+}
+
+.carrer-header {
+	margin-bottom: 1rem;	
+}
+
+.carrer-graduated img {
+	margin-bottom: .3em;
+}
+.carrer-director .quote{
+	margin-bottom: .3em;
+}

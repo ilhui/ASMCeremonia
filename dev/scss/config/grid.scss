@@ -1,7 +1,7 @@
 .container {
 	display: grid;
 	grid-template-columns: 1fr .6fr 1fr .6fr .6fr 1fr; 
-	grid-template-rows: 1.3fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	gap: 12px;
 	grid-template-areas:
 		"header media media media media footer"

@@ -1,19 +1,21 @@
 mixin carrer(carrers)
-	div.flex-item
+	div.flex-item.carrer
 		each value in carrers
-			div
-				//- p Licenciatura
+			div.carrer-header
+				p.tag Licenciatura
 				h3= value.name
 			div.flex-content
-				div.flex-content-item
+				div.flex-graduated.carrer-graduated
 					each person,index in value.graduates
-						img.img--graduated(src="assets/images/" + value.folder + "/" + `${index+1}` + ".png", alt="Foto " + person)
+						img.img-graduated(src="assets/images/" + value.folder + "/" + `${index+1}` + ".png", alt="Foto " + person)
 						h4= person
-				div.flex-item
-					img.img--director(src="assets/images/directores/"+value.picdirector+".png", alt="")
-					p.quote= `"${value.quote}"`
-					h5= value.director
-					if value.female
-						p.director Directora de la Carrera
-					else
-						p.director Director de la Carrera
+				div.flex-director.carrer-director
+					div
+						img.img-director(src="assets/images/directores/"+value.picdirector+".png", alt="")
+						p.quote= `"${value.quote}"`
+					div 
+						h5= value.director
+						if value.female
+							p.director Directora de la Carrera
+						else
+							p.director Director de la Carrera

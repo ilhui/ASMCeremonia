@@ -1,0 +1,11 @@
+@mixin border-radius {
+	border-radius: 1rem;
+}
+
+@mixin border-radius-big {
+	border-radius: 2rem;
+}
+
+@mixin border-line {
+	border: 1px solid $primary-color-alpha;
+}

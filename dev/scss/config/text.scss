@@ -1,65 +1,93 @@
+:root {
+	--font-size-desktop: 20px;
+	--font-size-tablet: 16px;
+	--font-size-movil: 14px;
+}
+
+$font-desktop: var(--font-size-desktop);
+$font-tablet: var(--font-size-tablet);
+$font-movil: var(--font-size-movil);
+
 body {
 	color: $primary-color;
 	font-family: $font-general;
-	font-size: 20px;
 	text-align: center;
 	text-rendering: optimizeLegibility;
 }
 
 .container {
-	font-size: 20px;
+	font-size: $font-desktop;
 }
 
 h1 {
 	color: $primary-color;
 	font-weight: 400;
-	font-size: 1.1rem;
+	font-size: 1em;
+	margin: 0;
 }
 
 h2 {
 	color: $acent-color;
 	font-weight: 700;
-	font-size: 2.3rem;
+	font-size: 2.2em;
+	margin: 0;
 }
 
 h3 {
 	color: $primary-color;
 	font-weight: 600;
-	font-size: 1.2rem;
+	font-size: 1.25em;
+	margin: 0;
 }
 
 h4 {
 	color: $primary-color;
 	font-weight: 600;
-	font-size: 1.1rem;
+	font-size: 1em;
+	margin: 0;
 }
 
 h5 {
 	color: $primary-color;
 	font-weight: 600;
-	font-size: .8rem;
+	font-size: .8em;
+	margin: 0;
 }
 
 h6 {
 	color: $second-color;
 	font-weight: 400;
-	font-size: 1.1rem;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: .3em;
 }
 
 p {
+	font-size: .9em;
 	font-weight: 400;
-	line-height: 1.6em;
+	line-height: 1.65em;
 }
 
 .quote {
-	font-size: .8rem;
+	font-size: .8em;
 	color: $acent-color;
 	font-style: italic;
 	font-weight: 400;
+	line-height: 1.1em;
+	margin: 0 auto;
+	width: 80%;
 }
 
 .director {
-	font-size: .6rem;
+	font-size: .6em;
 	color: $second-color;
 	font-weight: 400;
+	margin: 0;
+}
+
+.tag {
+	font-size: .8em;
+	color: $acent-color;
+	font-weight: 400;
+	margin: 0;
 }

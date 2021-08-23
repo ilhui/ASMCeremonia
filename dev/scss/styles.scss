@@ -1,6 +1,7 @@
 //Mixins
 @import "mixins/breakpoints";
 @import "mixins/reset-list";
+@import "mixins/borders";
 
 //Configuración guias de estilo
 @import "config/colors";
@@ -8,12 +9,16 @@
 @import "config/grid";
 @import "config/flex";
 
-
 //Estilos base
 @import "base/normalize";
 @import "base/base";
+@import "base/button";
 @import "config/text";
-@import "config/media"
-// Bloques
+@import "config/images";
 
+// Bloques
+@import "blocks/header.scss";
+@import "blocks/media.scss";
+@import "blocks/main.scss";
+@import "blocks/footer.scss";
 // Pages
