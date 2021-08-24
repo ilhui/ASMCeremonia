@@ -1,0 +1,7 @@
+@mixin background-image {
+	background-image: url("../assets/images/gradient.jpg");
+	background-position: center; 
+	background-size: cover;
+	background-blend-mode: soft-light;
+	background-color: $background-color;
+}

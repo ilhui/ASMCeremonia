@@ -1,14 +1,15 @@
 img {
-	width: auto;
-	max-width: 100%;
-	display: block;
+	width: 100%;
 	height: auto;
-	margin: auto;
-	box-sizing: border-box;
+	// max-width: 100%;
+	// display: block;
+	// height: auto;
+	// margin: auto;
+	// box-sizing: border-box;
 }
 
-.logo img {
-	max-width: 60%;
+.footer .logo {
+	// max-width: 100%;
 }
 
 .img-graduated {

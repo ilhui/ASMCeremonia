@@ -15,7 +15,8 @@ body {
 
 }
 
-.container {
+.container,
+.cover {
 	font-size: $font-desktop;
 	text-rendering: optimizeLegibility;
 	@include tablet {

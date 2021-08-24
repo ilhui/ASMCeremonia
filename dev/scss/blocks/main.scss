@@ -1,7 +1,7 @@
 .carrer {
 	padding: 1rem;
-	@include border-radius
-	@include border-line
+	@include border-radius;
+	@include border-line;
 }
 .carrer:nth-last-child(n+2) {
 	margin-right: 12px;
