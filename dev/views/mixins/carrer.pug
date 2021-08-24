@@ -5,10 +5,18 @@ mixin carrer(carrers)
 				p.tag Licenciatura
 				h3= value.name
 			div.flex-content
-				div.flex-graduated.carrer-graduated
-					each person,index in value.graduates
-						img.img-graduated(src="assets/images/" + value.folder + "/" + `${index+1}` + ".png", alt="Foto " + person)
-						h4= person
+				div.carousel
+					.carousel-contenedor
+						button.carousel-anterior(aria-label="Anterior")
+							i.fas.fa-chevron-left
+						.flex-graduated.carrer-graduated.carousel-list
+							each person,index in value.graduates
+								.carousel-element
+									img.img-graduated(src="assets/images/" + value.folder + "/" + `${index+1}` + ".png", alt="Foto " + person)
+									h4= person
+						button.carousel-siguiente(aria-label="Siguiente")
+							i.fas.fa-chevron-right
+					.carousel-indicadores(rol="tablist")
 				div.flex-director.carrer-director
 					div
 						img.img-director(src="assets/images/directores/"+value.picdirector+".png", alt="")

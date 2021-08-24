@@ -1,3 +1,6 @@
+// Glider
+@import "config/glider";
+
 //Mixins
 @import "mixins/breakpoints";
 @import "mixins/reset-list";
@@ -9,6 +12,7 @@
 @import "config/fonts";
 @import "config/grid";
 @import "config/flex";
+
 
 //Estilos base
 @import "base/normalize";
@@ -23,4 +27,3 @@
 @import "blocks/media.scss";
 @import "blocks/main.scss";
 @import "blocks/footer.scss";
-// Pages

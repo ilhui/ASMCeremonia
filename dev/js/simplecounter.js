@@ -3,7 +3,7 @@
 (function (exports) {
 	'use strict';
 
-	/*!
+	/*
 	 * Project : simply-countdown
 	 * Date : 27/06/2015
 	 * License : MIT
@@ -305,7 +305,7 @@ if (window.jQuery) {
 simplyCountdown('#counter', {
 	year: 2021, // required
 	month: 8, // required
-	day: 27, // required
+	day: 24, // required
 	hours: 17, // Default is 0 [0-23] integer
 	minutes: 0, // Default is 0 [0-59] integer
 	seconds: 0, // Default is 0 [0-59] integer
@@ -319,7 +319,7 @@ simplyCountdown('#counter', {
 	inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
 	inlineClass: 'simply-countdown-inline', //inline css span class in case of inline = true
 	// in case of inline set to false
-	enableUtc: true, //Use UTC or not - default : false
+	enableUtc: false, //Use UTC or not - default : false
 	onEnd: function () {
 		document.getElementById('cover').classList.add('hidden');
 		return;
