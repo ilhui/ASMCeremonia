@@ -3,24 +3,38 @@
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: stretch;
-	width: auto;
+	width: 100%;
 	height: auto;
+	:nth-last-child(n+2){
+		margin-right: 12px;
+	}
 	@include mobile {
 		flex-flow: column nowrap;
 	}
 }
-
 .flex-item {
 	flex-grow: 1;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 12px;
+	@include border-radius;
+	@include border-line;
+	// background-color: $background-color-alpha;
 }
 
+.flex-header {
+	padding-bottom: 12px;
+}
+.flex-header p {
+	margin: 0;
+}
 .flex-content {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: stretch;
-	width: auto;
-	height: auto;
 	@include tablet {
 		flex-flow: column nowrap;
 		justify-content: center;
@@ -28,20 +42,37 @@
 }
 
 .flex-graduated{
-	width: 60%;
-	margin: auto;
+	min-width: 180px;
+	max-width: 400px;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
 }
+
+.flex-graduated img {
+	padding-bottom: 12px;
+}
+
+
 .flex-director {
-	margin: auto;
-	width: 40%;
+	max-width: 200px;
+	// background-color: green;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
 	justify-content: space-evenly;
 }
 
 .flex-director img {
-	margin-bottom: 1rem;
-}
+	width: 80%;
+	border-radius: 50%;
+	background-color: $acent-color;
 
+}
 

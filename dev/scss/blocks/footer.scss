@@ -1,7 +1,9 @@
 .footer {
 	margin: auto;
 }
-.footer img {
+.footer .logo img {
+	width: auto;
+	max-width: 180px;
 	margin-bottom: 1rem;
 }
 .footer p {

@@ -17,6 +17,35 @@
 
 // Slider
 
-window.addEventListener('load', function () {
-	new Glider(document.querySelector('.carousel-list'));
+new Glider(document.querySelector('.carousel-television'), {
+	slidesToShow: "auto",
+	itemWidth: 400,
+	dots: '#dots',
+	draggable: true,
+	arrows: {
+		prev: '.prev-television',
+		next: '.next-television'
+	}
+});
+
+new Glider(document.querySelector('.carousel-diseno'), {
+	slidesToShow: "auto",
+	itemWidth: 400,
+	dots: '#dots',
+	draggable: true,
+	arrows: {
+		prev: '.prev-diseno',
+		next: '.next-diseno'
+	}
+});
+
+new Glider(document.querySelector('.carousel-consultoria'), {
+	slidesToShow: "auto",
+	itemWidth: 400,
+	dots: '#dots',
+	draggable: true,
+	arrows: {
+		prev: '.prev-consultoria',
+		next: '.next-consultoria'
+	}
 });
